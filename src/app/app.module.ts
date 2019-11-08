@@ -8,6 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { RestaurantComponent } from './restaurants/restaurant/restaurant.component';
+import { RestaurantsService } from './serviços/restaurants.service';
+import { CustomerComponent } from './customer/customer.component';
+import { CompanyComponent } from './company/company.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { RestaurantComponent } from './restaurants/restaurant/restaurant.compone
     AboutComponent,
     RestaurantsComponent,
     RestaurantComponent,
+    CustomerComponent,
+    CompanyComponent,    
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [RestaurantsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

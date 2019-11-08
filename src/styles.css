@@ -26,3 +26,6 @@ img{
 .info-box-detail{
   text-align: center;
 }
+.collapse navbar-collapse:hover{
+  color: brown;
+}
